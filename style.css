@@ -64,6 +64,12 @@ body {
 .error input {
   border: 1px solid var(--light-red);
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 .input-container .error-text {
   font-size: 0.7rem;
   text-align: left;
@@ -72,7 +78,22 @@ body {
   color: var(--light-red);
   display: none;
 }
+.input-container p {
+  margin-bottom: 0;
+}
 .error .error-text {
+  display: block;
+}
+
+.input-container .success-text {
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-top: 0.3rem;
+  color: hsl(115, 52%, 45%);
+  display: none;
+}
+.success .success-text {
   display: block;
 }
 .notify-form button {

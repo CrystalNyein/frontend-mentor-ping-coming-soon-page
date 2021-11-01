@@ -48,10 +48,12 @@
             type="email"
             placeholder="Your email address.."
             required
+            onkeyup="validateEmail(event)"
           />
           <p class="error-text">Please provide a valid email address</p>
+          <p class="success-text">Thank you for your subscription</p>
         </div>
-        <button>Notify Me</button>
+        <button onclick="validateEmail(event)">Notify Me</button>
       </div>
       <img
         class="illustration"
