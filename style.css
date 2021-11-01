@@ -10,3 +10,97 @@ html {
   font-size: 20px;
   font-family: var(--libre-font);
 }
+body {
+  margin: 0;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+.main-container {
+  position: relative;
+  width: 28rem;
+  max-width: 90vw;
+}
+#logo {
+  margin-top: 2rem;
+}
+.main-container h1 {
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 0.6rem;
+}
+.main-container h1 span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+.main-container p {
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin-bottom: 1.3rem;
+}
+.notify-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.3rem;
+}
+.notify-form .input-container {
+  width: calc(70% - 3rem);
+}
+.input-container input {
+  width: 100%;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--pale-blue);
+  outline: none;
+}
+.input-container input::placeholder {
+  color: var(--gray);
+}
+.error input {
+  border: 1px solid var(--light-red);
+}
+.input-container .error-text {
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-top: 0.3rem;
+  color: var(--light-red);
+  display: none;
+}
+.error .error-text {
+  display: block;
+}
+.notify-form button {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  width: 27%;
+  background-color: var(--blue);
+  color: white;
+  outline: none;
+  border-radius: 1.5rem;
+  border: 1px solid var(--blue);
+}
+.illustration {
+  width: 100%;
+}
+.footer {
+  margin-top: 1.3rem;
+}
+.social-icons i {
+  color: var(--blue);
+  border: 1px solid var(--pale-blue);
+  font-size: 0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 50%;
+  margin: 0 0.4rem 0.4rem;
+}
+.footer p {
+  font-size: 0.7rem;
+  color: var(--gray);
+}
