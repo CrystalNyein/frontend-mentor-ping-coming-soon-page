@@ -24,6 +24,7 @@ body {
 }
 #logo {
   margin-top: 2rem;
+  width: 4rem;
 }
 .main-container h1 {
   font-weight: 300;
@@ -47,7 +48,7 @@ body {
   margin-bottom: 2.3rem;
 }
 .notify-form .input-container {
-  width: calc(70% - 3rem);
+  width: calc(70% - 2.4rem);
 }
 .input-container input {
   width: 100%;
@@ -83,6 +84,7 @@ body {
   outline: none;
   border-radius: 1.5rem;
   border: 1px solid var(--blue);
+  box-shadow: 1px 5px 10px hsl(223, 44%, 78%);
 }
 .illustration {
   width: 100%;
@@ -103,4 +105,40 @@ body {
 .footer p {
   font-size: 0.7rem;
   color: var(--gray);
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 17px;
+  }
+  .main-container {
+    width: 20rem;
+  }
+  #logo {
+    margin-top: 4rem;
+  }
+  .main-container h1 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .notify-form {
+    display: unset;
+  }
+  .notify-form button {
+    width: 90%;
+    margin-bottom: 1.8rem;
+  }
+  .notify-form .input-container {
+    margin: 0 auto;
+    width: calc(90% - 2.4rem);
+    margin-bottom: 1.6rem;
+  }
+  .input-container input {
+    margin-left: -1.2rem;
+  }
+  .input-container .error-text {
+    margin-bottom: 0.5rem;
+  }
+  .footer {
+    margin-top: 2.5rem;
+  }
 }
